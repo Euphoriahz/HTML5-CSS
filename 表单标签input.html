@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+</head>
+<link rel="stylesheet" href="style.css">
+
+<body>
+    <form action="run.py" method="post" name="name1">
+        <label for="text">用户名:</label><input type="text" name="username" id="text" placeholder="请输入用户名" maxlength="6"> <br> <label for="pwd">密码:</label>
+        <input type="password" name="pwd" id="pwd" placeholder="请输入密码"> <br>性别：<label for="nan">男</label>
+        <input type="radio" name="sex" id="nan"> <label for="nv">女</label>
+        <input type="radio" name="sex" id="nv"> <br>爱好： <label for="chifan">吃饭</label>
+        <input type="checkbox" name="hobby" id="chifan"> <label for="shuijiao">睡觉</label ><input type="checkbox" name="hobby" id="shuijiao"> <br><label for="xieyi">是否同意用户协议:</label>
+        <input type="checkbox" name="ty" id="xieyi" checked="checked"><br>
+        <input type="submit" value="立即注册"><br>
+        <input type="reset" value="重新填写">
+        <!-- button搭配js使用 -->
+        <input type="button" value="获取短信验证码"><br> 上传文件：
+        <input type="file">
+    </form>
+</body>
+
+</html>

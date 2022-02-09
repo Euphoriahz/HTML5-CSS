@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册页实战</title>
+</head>
+
+<body>
+    <h4>请在这里进行注册</h4>
+    <form action="run.py" method="post">
+        <table width=600px>
+            <!--  第一行 -->
+            <tr>
+                <td>性别:</td>
+                <td><input type="radio" name="sex" id="nan">
+                    <label for="nan">男</label>
+                    <input type="radio" name="sex" id="nv">
+                    <label for="nv">女</label>
+                </td>
+            </tr>
+            <!-- 第二行 -->
+            <tr>
+                <td>生日</td>
+                <td>
+                    <select>
+                        <option>--请选择年份--</option>
+                        <option>1999年</option>
+                        <option>2000年</option>
+                        <option>2001年</option>
+                        <option>2002年</option>
+                        <option>2003年</option>
+                        <option>2004年</option>
+                        <option>2005年</option>
+                    </select>
+                    <select>
+                        <option>--请选择月份--</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                    </select>
+                    <select>
+                        <option>--请选择日--</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                    </select>
+                </td>
+            </tr>
+            <!-- 第三行 -->
+            <tr>
+                <td>所在地区:</td>
+                <td><input type="text" placeholder="请输入地区" maxlength="10"></td>
+            </tr>
+            <!-- 第四行 -->
+            <tr>
+                <td>婚姻状况:</td>
+                <td>
+                    <input type="radio" name="zk" id="weihun">
+                    <label for="weihun">未婚</label>
+                    <input type="radio" name="zk" id="lihun">
+                    <label for="lihun">离婚</label>
+                </td>
+            </tr>
+            <!-- 第五行 -->
+            <tr>
+                <td>学历:</td>
+                <td><input type="text" placeholder="请输入学历"></td>
+            </tr>
+            <!-- 第六行 -->
+            <tr>
+                <td>喜欢的类型</td>
+                <td>
+                    <input type="checkbox" id="xianrou">
+                    <label for="xianrou">小鲜肉</label>
+                    <input type="checkbox" id="larou">
+                    <label for="larou">老腊肉</label>
+                    <input type="checkbox" id="wumei">
+                    <label for="wumei">妩媚的</label>
+                    <input type="checkbox" id="keai">
+                    <label for="keai">可爱的</label>
+                    <input type="checkbox" id="all">
+                    <label for="all">我都要</label>
+                </td>
+            </tr>
+            <!-- 第七行 -->
+            <tr>
+                <td>自我介绍</td>
+                <td><textarea cols="60" rows="10"></textarea></td>
+            </tr>
+            <!-- 第八行 -->
+            <tr>
+                <td></td>
+                <td><input type="submit" value="立即注册"></td>
+            </tr>
+            <!-- 第九行 -->
+            <tr>
+                <td></td>
+                <td><input type="reset" value="重新填写"></td>
+            </tr>
+            <!-- 第十行 -->
+            <tr>
+                <td></td>
+                <td>
+                    <input type="checkbox" checked="checked"> 我同意注册条款和会员加入标准
+                </td>
+            </tr>
+            <!-- 第十一行 -->
+            <tr>
+                <td></td>
+                <td>
+                    <a href="#">我是会员，立即登录</a>
+                </td>
+            </tr>
+            <!-- 第十二行 -->
+            <tr>
+                <td></td>
+                <td>
+                    <h5>我承诺</h5>
+                    <ul>
+                        <li>年满18岁</li>
+                        <li>抱着严肃的态度</li>
+                        <li>真诚寻找另一半</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</html>

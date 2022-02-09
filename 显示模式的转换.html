@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>显示模式的转换</title>
+</head>
+<style>
+    /* display:block 转换为块元素 
+    转换为块元素后可以对其设置宽高*/
+    /* display:inline 转换为行内元素 */
+    /* dispaly:inline-block 转换为行内块元素 
+    其位于一行内，并且可以对其设置宽高*/
+    
+    a {
+        /* 将a标签转换为块元素 */
+        display: block;
+        width: 150px;
+        height: 150px;
+        background-color: lightcoral;
+    }
+    
+    div {
+        /* 把div转换为行内元素 */
+        display: inline;
+        background-color: lightseagreen;
+    }
+    
+    span {
+        /* 把span转换为行内块元素 */
+        display: inline-block;
+        width: 150px;
+        height: 150px;
+        background-color: magenta;
+    }
+</style>
+
+<body>
+    <a href="#">我是行内元素</a>
+    <div>我是块元素</div>
+    <span>行内元素转换为行内块元素</span>
+</body>
+
+</html>

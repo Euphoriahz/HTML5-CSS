@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>后代选择器</title>
+</head>
+<style>
+    /* 选择ol的孩子li */
+    
+    ol li {
+        color: pink;
+    }
+    /* 选择ul的孩子li */
+    
+    ul li {
+        color: powderblue;
+    }
+    /* 选择ol里的li里的a标签 */
+    
+    ol li a {
+        color: royalblue;
+    }
+</style>
+
+<body>
+    <ol>
+        <li>我是ol的孩子<a href="#">我是li里面的a标签</a></li>
+        <li>我是ol的孩子</li>
+        <li>我是ol的孩子</li>
+    </ol>
+    <ul>
+        <li>我是ul的孩子</li>
+        <li>我是ul的孩子</li>
+        <li>我是ul的孩子</li>
+    </ul>
+</body>
+
+</html>

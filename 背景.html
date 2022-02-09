@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景</title>
+</head>
+<style>
+    .div1 {
+        /* 设置背景颜色 */
+        width: 200px;
+        height: 200px;
+        /* background-color: transparent（transparent 为透明） */
+        background-color: violet;
+    }
+    
+    .div2 {
+        /* 设置背景图片及其格式 */
+        width: 600px;
+        height: 600px;
+        /* 页面背景既可以添加颜色也可以添加图片，只不过图片会压住颜色 */
+        background-color: pink;
+        background-image: url(D:/学习工作所使用的文档集合/MobileFile/僵尸aj.jpg);
+        /* 背景图片不平铺 */
+        background-repeat: no-repeat;
+        /* 居中 */
+        background-position: center top;
+    }
+</style>
+
+<body>
+    <div class="div1"></div>
+    <div class="div2"></div>
+</body>
+
+</html>

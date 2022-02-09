@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>产品模块布局</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        background-color: #f5f5f5;
+    }
+    
+    a {
+        color: #333;
+        text-decoration: none;
+    }
+    
+    .box {
+        width: 298px;
+        height: 450px;
+        background-color: #ffff;
+        /* 让块级盒子居中对齐 */
+        margin: 100px auto;
+    }
+    
+    .box img {
+        /* 让图片与父级盒子一样宽即可实现图片不超出盒子放置 */
+        width: 100%;
+    }
+    
+    .review {
+        height: 70px;
+        font-size: 14px;
+        padding: 0 50px;
+        margin-top: 20px;
+    }
+    
+    .appreaise {
+        font-size: 12px;
+        color: #b0b0b0;
+        margin-top: -5px;
+        padding: 0 28px;
+    }
+    
+    .info h4 {
+        display: inline-block;
+        font-weight: 400;
+    }
+    
+    .info {
+        font-size: 14px;
+        margin-top: 5px;
+        padding: 0 28px;
+    }
+    
+    .info span {
+        color: #ff6700;
+    }
+    
+    .info em {
+        font-style: normal;
+        color: #ebe4e0;
+        margin: 0 3px 0 10px;
+    }
+</style>
+
+<body>
+    <div class="box">
+        <img src="https://img2.ch999img.com/newstatic/2369/038a5459e3a520c2.jpg.webp" alt="">
+        <p class="review">iphone 13 promax的强大之处</p>
+        <div class="appreaise">来自于apple的产品</div>
+        <div class="info">
+            <h4><a href="#">iphone 13promax 256G...</a></h4>
+            <em>|</em>
+            <span> 8999元</span></div>
+    </div>
+</body>
+
+</html>

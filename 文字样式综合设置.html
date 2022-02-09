@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文字样式的综合设置</title>
+    <style>
+        body {
+            /* 文字大小/行间距/字体样式 */
+            font: 16px/28px 'Microsoft YaHei';
+        }
+        
+        h1 {
+            /* 文字不加粗 */
+            font-weight: 400;
+            /* 文字水平居中 */
+            text-align: center;
+        }
+        
+        .shijian {
+            color: #888888;
+            font-size: 12px;
+            text-align: center;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        .search {
+            color: #666666;
+            width: 170px;
+        }
+        
+        .btn {
+            font-weight: 700;
+        }
+        
+        p {
+            text-indent: 2em;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>今日新闻一览</h1>
+    <div class="shijian">2021-12-12 16:00:00 来源: <a href="#">中国新闻网</a>
+        <input type="text" placeholder="请输入查询条件.." class="search"> <button class="btn">搜索</button>
+    </div>
+    <hr>
+    <p>习近平新时代中国特色社会主义思想是当代中国马克思主义、二十一世纪马克思主义，是中华文化和中国精神的时代精华，实现了马克思主义中国化新的飞跃。十九届六中全会决议，用10个“明确”概括了核心内容。</p>
+    <!-- 在给图片做居中对齐的时候要对图片的父元素写 text-align:center !-->
+</body>
+
+</html>
