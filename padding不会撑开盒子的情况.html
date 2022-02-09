@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>padding不会撑开盒子的情况</title>
+</head>
+<style>
+    h1 {
+        /* 没有指定宽度 */
+        height: 20px;
+        background-color: pink;
+        padding: 30px;
+    }
+    
+    div {
+        width: 300px;
+        height: 100px;
+        background-color: blueviolet;
+    }
+    
+    div p {
+        /* 盒子中的p标签没有指定宽度
+        p标签是块级元素，它的宽度与它的父级元素一致，这是其特性，不是继承 */
+        padding: 30px;
+        background-color: aqua;
+    }
+</style>
+
+<body>
+    <h1></h1>
+    <div>
+        <p></p>
+    </div>
+</body>
+
+</html>

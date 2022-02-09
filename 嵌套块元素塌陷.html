@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>嵌套块元素塌陷</title>
+</head>
+<style>
+    .father {
+        width: 400px;
+        height: 400px;
+        background-color: blueviolet;
+        margin-top: 50px;
+        /* 方法1：使用边框将父子隔开 */
+        /* border: 1px solid transparent; */
+        /* 方法2：对父元素使用padding内边距 */
+        /* padding: 1px;/*
+        /*方法3：对父元素添加overflow:hidden */
+        overflow: hidden;
+    }
+    
+    .son {
+        width: 200px;
+        height: 200px;
+        background-color: pink;
+        margin-top: 100px;
+        /* 对于两个嵌套关系的块元素，父元素有上外边距同时子元素也有上外边距，此时父元素会塌陷较大的外边距值 */
+    }
+</style>
+
+<body>
+    <div class="father">
+        <div class="son"></div>
+    </div>
+</body>
+
+</html>
