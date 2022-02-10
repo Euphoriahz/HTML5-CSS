@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>清除浮动之额外标签法</title>
+</head>
+<style>
+    .box {
+        background-color: pink;
+        text-align: right;
+    }
+    
+    .damao {
+        float: left;
+        width: 300px;
+        height: 200px;
+        background-color: aqua;
+    }
+    
+    .ermao {
+        float: left;
+        width: 200px;
+        height: 200px;
+        background-color: coral;
+    }
+</style>
+
+<body>
+    <div class="box">父亲
+        <div class="damao">大毛</div>
+        <div class="ermao">二毛</div>
+        <!-- 在最后一个浮动元素后添加一个标签，并应用clear:both -->
+        <!-- 注意新增的标签必须是块元素 -->
+        <div style="clear: both;"></div>
+    </div>
+</body>
+
+</html>
