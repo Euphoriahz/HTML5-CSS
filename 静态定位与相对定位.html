@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>静态定位与相对定位</title>
+</head>
+<style>
+    /* position:static 静态定位按照标准流特性摆放，没有边偏移 */
+    /* position:relative 相对定位相对于它原来的位置来说 （盒子如果移动走了它原来的位置依然会保存）*/
+    /* 相对定位一般用来给绝对定位当爹 */
+    
+    .box1 {
+        position: relative;
+        top: 100px;
+        left: 100px;
+        width: 200px;
+        height: 200px;
+        background-color: pink;
+    }
+    
+    .box2 {
+        width: 200px;
+        height: 200px;
+        background-color: blueviolet;
+    }
+</style>
+
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+
+</html>
