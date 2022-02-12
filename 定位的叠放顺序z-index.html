@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>定位的叠放顺序z-index</title>
+</head>
+<style>
+    /* 使用 z-index 来控制前后顺序，其数值可以是正负值或0，默认是auto，数值越大盒子越靠上(注意数值没有单位) */
+    /* 如果属性值相同，则按照书写顺序，后来居上 */
+    /* 只有定位的盒子才有z-index */
+    
+    .box {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 200px;
+        height: 200px;
+        text-align: center;
+    }
+    
+    .yi {
+        background-color: pink;
+        z-index: 2;
+    }
+    
+    .er {
+        top: 50px;
+        left: 50px;
+        background-color: blueviolet;
+        z-index: 1;
+    }
+    
+    .san {
+        top: 100px;
+        left: 100px;
+        background-color: blue;
+    }
+</style>
+
+<body>
+    <div class="box yi">一</div>
+    <div class="box er">二</div>
+    <div class="box san">三</div>
+</body>
+
+</html>

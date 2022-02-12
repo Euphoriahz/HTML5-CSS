@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>粘性定位sticky</title>
+</head>
+<style>
+    /* 粘性定位可以被认为是相对定位和固定定位的混合 */
+    /* 它以浏览器的可视窗口作为参照点移动元素 */
+    /* 粘性定位占有原先的位置 */
+    /* 必须添加top,left,right,bottom其中一个才有效 */
+    
+    body {
+        height: 3000px;
+    }
+    
+    .nav {
+        position: sticky;
+        /* 当盒子距离可视页面0px时则黏住 */
+        top: 0;
+        width: 800px;
+        height: 50px;
+        background-color: pink;
+        margin: 100px auto;
+    }
+</style>
+
+<body>
+    <div class="nav">我是导航栏</div>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>固定定位技巧——固定到页面版心</title>
+</head>
+<style>
+    .W {
+        width: 800px;
+        height: 1400px;
+        background-color: pink;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    .fixed {
+        position: fixed;
+        /* 1.走浏览器宽度的一半 */
+        left: 50%;
+        /* 2.走版心宽度的一半，出于美观可以多几像素 */
+        margin-left: 405px;
+        width: 150px;
+        height: 100px;
+        background-color: aqua;
+    }
+</style>
+
+<body>
+    <div class="fixed"></div>
+    <div class="W">版心盒子 800像素</div>
+</body>
+
+</html>
