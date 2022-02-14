@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>定位的特殊性</title>
+</head>
+<style>
+    span {
+        /* 行内元素添加绝对或固定定位可以直接设置宽高 */
+        /* 块级元素添加绝对或固定定位后如果不给定宽高，则默认大小是内容的大小 */
+        position: absolute;
+        top: 150px;
+        width: 200px;
+        height: 150px;
+        background-color: pink;
+    }
+    
+    div {
+        position: absolute;
+        background-color: blueviolet;
+    }
+</style>
+
+<body>
+    <span>我是行内元素span</span>
+    <div>我是块元素div</div>
+</body>
+
+</html>
