@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>字体图标</title>
+</head>
+<style>
+    /* 字体图标的本质是文字，但表现形式是图标 */
+    /* 优点在于可以调整大小，颜色，并且所占空间小 */
+    
+    @font-face {
+        /* 字体声明 */
+        /* 在引用字体图标时注意要把font文件夹移到与.html文件同一个文件夹下 */
+        font-family: 'icomoon';
+        src: url('fonts/icomoon.eot?7lr8mf');
+        src: url('fonts/icomoon.eot?7lr8mf#iefix') format('embedded-opentype'), url('fonts/icomoon.ttf?7lr8mf') format('truetype'), url('fonts/icomoon.woff?7lr8mf') format('woff'), url('fonts/icomoon.svg?7lr8mf#icomoon') format('svg');
+        font-weight: normal;
+        font-style: normal;
+        font-display: block;
+    }
+    
+    .span1 {
+        font-family: 'icomoon';
+        color: pink;
+    }
+    
+    .span2 {
+        font-family: 'icomoon';
+        color: blueviolet;
+    }
+    /* 追加字体图标时，登录icomoon后点击import Icons上传之前下载好的字体图标文件中的selection.json文件即可 */
+</style>
+
+<body>
+    <span class="span1"></span>
+    <span class="span2"></span>
+</body>
+
+</html>
