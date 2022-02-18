@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>精灵图</title>
+</head>
+<style>
+    /* 精灵技术主要针对背景图片使用，就是把多个小背景整合到一张大图上 */
+    /* 其原理是利用background-position来定位需要的图片，移动的距离就是目标图片的x和y轴坐标 */
+    
+    .box1 {
+        width: 60px;
+        height: 60px;
+        /* background-position: -182px 0; */
+        background: url(https://game.gtimg.cn/images/yxzj/web201706/images/comm/index.png) no-repeat -182px 0;
+        margin: 100px auto;
+    }
+    
+    .box2 {
+        width: 27px;
+        height: 25px;
+        margin: 200px;
+        background: url(https://game.gtimg.cn/images/yxzj/web201706/images/comm/index.png) no-repeat -155px -106px;
+    }
+</style>
+
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+
+</html>
