@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>visibility可见性</title>
+</head>
+<style>
+    .baba {
+        /* visibility: hidden 隐藏元素后其占有的位置依然保留 */
+        visibility: hidden;
+        width: 200px;
+        height: 200px;
+        background-color: pink;
+    }
+    
+    .mama {
+        /* 显示元素 */
+        visibility: visible;
+        width: 200px;
+        height: 200px;
+        background-color: deepskyblue;
+    }
+</style>
+
+<body>
+    <div class="baba">猪爸爸</div>
+    <div class="mama">猪妈妈</div>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display显示隐藏元素</title>
+</head>
+<style>
+    /*  display:none 隐藏元素
+    display:block 除了转换为块级元素外，同时还有显示元素的意思 */
+    
+    .peppa {
+        /* display:none 元素隐藏后其占有的位置也没了 */
+        display: none;
+        width: 200px;
+        height: 200px;
+        background-color: pink;
+    }
+    
+    .george {
+        /* display: none; */
+        display: block;
+        width: 200px;
+        height: 200px;
+        background-color: deepskyblue;
+    }
+</style>
+
+<body>
+    <div class="peppa">佩奇</div>
+    <div class="george">乔治</div>
+</body>
+
+</html>
