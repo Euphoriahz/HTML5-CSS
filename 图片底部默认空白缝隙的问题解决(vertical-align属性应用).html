@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图片底部默认空白缝隙的问题解决(vertical-align属性应用)</title>
+</head>
+<style>
+    /* 导致出现空隙的原因为 行内元素会和文字的基线对齐 */
+    
+    div {
+        border: 2px solid red;
+    }
+    
+    img {
+        /* 解决方案1：给图片添加vertical-align属性 */
+        vertical-align: middle;
+        /* 解决方案2：将图片转换为块级元素 */
+        /* display: block; */
+    }
+</style>
+
+<body>
+    <div>
+        <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-13-iphone-nav-202109?wid=200&hei=130&fmt=png-alpha&.v=1630706116000" alt="">
+    </div>
+</body>
+
+</html>

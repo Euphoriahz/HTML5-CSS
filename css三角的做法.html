@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css三角的做法</title>
+</head>
+<style>
+    .box1 {
+        width: 0;
+        height: 0;
+        border-top: 10px solid pink;
+        border-right: 10px solid red;
+        border-left: 10px solid blue;
+        border-bottom: 10px solid green;
+    }
+    
+    .box2 {
+        /* 做三角形时注意三角形的大小由边框粗细决定，方向由边框位置决定，其原理是将四个边框中的3个颜色设置为透明，然后将需要的边框设置相应颜色即可 */
+        width: 0;
+        height: 0;
+        /* 行高和字体大小是出于兼容性考虑 */
+        line-height: 0;
+        font-size: 0;
+        border: 50px solid transparent;
+        border-top-color: pink;
+        margin: 100px auto;
+    }
+</style>
+
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+
+</html>
