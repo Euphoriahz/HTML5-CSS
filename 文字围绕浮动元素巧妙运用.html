@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文字围绕浮动元素巧妙运用</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .father {
+        width: 300px;
+        height: 70px;
+        background-color: pink;
+        margin: 100px auto;
+        padding: 5px;
+    }
+    
+    .pic {
+        /* 使用float做文字围绕效果 */
+        float: left;
+        width: 120px;
+        height: 70px;
+        background-color: blueviolet;
+        margin-right: 5px;
+    }
+</style>
+
+<body>
+    <div class="father">
+        <div class="pic">这个盒子里放图片</div>
+        <p>【大家好我叫胡同学！大家好我叫胡同学！大家好我叫胡同学！】</p>
+    </div>
+</body>
+
+</html>

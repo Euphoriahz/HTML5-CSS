@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>margin负值巧妙运用</title>
+</head>
+<style>
+    ul li {
+        position: relative;
+        float: left;
+        list-style: none;
+        width: 150px;
+        height: 200px;
+        border: 1px solid blueviolet;
+        /* 负值即为向左运动，让盒子从右到左一个压住一个，实现边框合并*/
+        margin-left: -1px;
+    }
+    
+    ul li:hover {
+        /* 1.如果盒子没有定位，添加相对定位属性使得鼠标经过每个盒子边框可以变色(提高经过盒子的层级) */
+        /*  position: relative; */
+        /* 2.如果已经有定位则可以直接利用z-index提高层级 */
+        z-index: 1;
+        border: 1px solid pink;
+    }
+</style>
+
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+</body>
+
+</html>
